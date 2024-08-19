@@ -1,0 +1,36 @@
+{
+  "name": "stmg",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@nextui-org/react": "^2.4.6",
+    "formik": "^2.4.6",
+    "framer-motion": "^11.3.28",
+    "gsap": "^3.12.5",
+    "html-react-parser": "^5.1.12",
+    "libphonenumber-js": "^1.11.7",
+    "next": "14.2.5",
+    "next-intl": "^3.17.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-international-phone": "^4.3.0",
+    "react-photoswipe-gallery": "^3.0.2",
+    "sass": "^1.77.8",
+    "sharp": "^0.33.5",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5"
+  }
+}

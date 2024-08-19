@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  stg-com:
+    build: "./"
+    restart: always
+    container_name: stg-com
+    labels:
+      logging: "promtail"
+      logging_jobname: "containerlogs"
+    ports:
+      - "2000:3000"

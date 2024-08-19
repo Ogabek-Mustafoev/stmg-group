@@ -1,0 +1,120 @@
+@use 'mixin' as mixin;
+
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer base {
+  body {
+    @apply bg-light;
+  }
+
+  .transition-300 {
+    @apply transition-all duration-300;
+  }
+
+  .transition-400 {
+    @apply transition-all duration-400;
+  }
+
+  .transition-700 {
+    @apply transition-all duration-700;
+  }
+
+  .container {
+    @apply w-full max-w-[1300px] 3xl:max-w-[1500px] px-3 sm:px-4 mx-auto;
+  }
+
+  .hide-scroll::-webkit-scrollbar {
+    @apply hidden;
+  }
+
+  .absolute-center {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20;
+  }
+
+  .heading {
+    @apply text-3xl md:text-4xl xl:text-5xl font-semibold border-b-4 leading-tight md:leading-normal md:border-b-5 border-primary w-max;
+  }
+
+  .see-more {
+    @apply text-lg border-b-2 leading-tight text-primary border-primary;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section.page {
+  overflow-x: hidden;
+  padding-top: 4rem;
+  min-height: 100vh;
+}
+
+.grid-3 {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat( auto-fit, minmax(280px, 1fr));
+  @include mixin.media(1000px) {
+    gap: 15px;
+    grid-template-columns: repeat( auto-fit, minmax(310px, 1fr));
+  }
+  @include mixin.media(1600px) {
+    gap: 20px;
+    grid-template-columns: repeat( auto-fit, minmax(360px, 1fr));
+  }
+}
+
+.grid-4 {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+  @include mixin.media(1100px) {
+    gap: 20px;
+    grid-template-columns: repeat( auto-fit, minmax(280px, 1fr));
+  }
+}
+
+.react-international-phone-input-container {
+  border: 1px solid #ccc;
+  padding: 10px 0 10px 12px;
+  border-radius: 12px;
+}
+
+.react-international-phone-country-selector-button,
+.react-international-phone-input {
+  border: none !important;
+  font-size: 18px !important;
+  background: white !important;
+}
+
+.react-international-phone-flag-emoji {
+  width: 35px !important;
+  height: 35px !important;
+}
+
+.spin {
+  animation: spin 7s linear infinite;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1D3044;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "seo": {
+    "title": "STMG-group - Leading Provider of Mining Equipment",
+    "description": "Welcome to STMG-group. We offer a comprehensive range of high-quality mining equipment tailored to meet the diverse needs of our customers. Explore our services, projects, and partnerships for superior mining solutions.",
+    "keywords": "STMG-group, mining equipment, high-quality, reliable, dump trucks, drill rigs, mining solutions"
+  },
+  "pages": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "partners": "Partners",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "RENTAL OF EXCAVATING EQUIPMENT  ",
+    "description": "Drawing on extensive industry experience, we deliver state-of-the-art, reliable equipment that empowers clients to execute their mining projects with unparalleled success.",
+    "request": "Leave a request"
+  },
+  "home": {
+    "service-title": "Our purpose: To build a better future together",
+    "wide-range": "Wide Range of Mining Equipment",
+    "explore": "Empowering your projects with innovative tools and equipment.\nWhether you need excavators, drills, or loaders, we have the right equipment for your projects.",
+    "high-quality": "We have complete confidence in our equipment",
+    "our-equipment": "All equipment belonging to our company is under constant control. Because trust and professionalism are always in the first place for us.",
+    "flexible": "Contracts that suit your needs",
+    "we-offer": "The terms of cooperation are sure to please you. Because we offer cooperation that matches the needs and wishes of our customers."
+  },
+  "about": {
+    "seo": {
+      "title": "About STMG-group - Leading Mining Equipment Provider",
+      "description": "Learn more about STMG-group, our mission, vision, and commitment to providing top-notch mining equipment and solutions to our clients.",
+      "keywords": "STMG-group, about us, mining equipment, mission, vision, commitment"
+    },
+    "title": "ABOUT US",
+    "WHO-WE-ARE": "WHO WE ARE",
+    "since-establishment": "<p>Since the establishment of our company, we have strived to be a reliable partner for all enterprises in the mining industry.</p><p>Our main goal is to provide customers with advanced mining equipment that is highly efficient and safe.</p><p>We pride ourselves on our ability to offer each client a variety of solutions and an individual approach that allows them to effectively develop and succeed in their projects.</p>",
+    "WHAT-WE-DO": "WHAT WE DO",
+    "in-our-ultra": "<p>In our ultra-modern factory, we can build a machine tailored to your requirements from concept to commissioning in 12 to 16 weeks.</p><p>Today, we have expanded our range of mining equipment to include dump trucks, surface drill rigs, long drill rigs, dump trucks and roof rigs.</p><p>For the material handling department of the underground mining industry, we manufacture hydrostatic belt conveyors, material conveyors including scissor lifts, blast conveyors and material wagons manufactured to customer specifications. They can be in a muted design or a cassette design.</p>",
+    "OUR-REVIEW": "OUR REVIEW",
+    "st-stg": "<p>At STG - Enterprise, we pride ourselves on delivering excellence in every project we undertake. Our commitment to quality, safety, and customer satisfaction is evident in the positive reviews and feedback we receive from our clients. Here are a few highlights that showcase our dedication to excellence</p><p>Our team of skilled professionals brings years of experience and expertise to every construction project. Whether it’s residential, commercial, or industrial construction, we ensure that every detail is executed to perfection. Our clients consistently commend us for our meticulous attention to detail and the superior quality of our work.</p>",
+    "connect": "CONNECT WITH US"
+  },
+  "services": {
+    "seo": {
+      "title": "Our Services - STMG-group",
+      "description": "Discover the wide range of services offered by STMG-group, including high-quality mining equipment, flexible cooperation terms, and tailored solutions to meet the diverse needs of our clients.",
+      "keywords": "STMG-group, services, mining equipment, flexible cooperation, tailored solutions"
+    },
+    "title": "SERVICES",
+    "description": "Our priority is customer satisfaction. We work with clients individually to understand their unique needs and goals.",
+    "XCMGXTC80": "XCMG XTC80 Diaphragm Wall Grab",
+    "wall-thickness": "<p>Wall thickness: 800~1500 mm</p><p>Wall depth: 80 m</p><p>Max. hoisting force: 640 kN</p><p>Max. hoisting speed: 60 m/min</p><p>Max. torque: 2×80 kN.m</p>",
+    "CRAWLER-EXCAVATOR": "CRAWLER EXCAVATOR VOLVO EC480DL",
+    "operating-weight": "<p>Operating weight: 47,300 - 53,100 kg</p><p>Gross power: 265 kW (355 hp) @ 1,700 rpm</p><p>Bucket capacity: 1.77 - 3.8 m³</p><p>Max. digging reach: 13,260 mm</p><p>Max. digging depth: 9,170 mm</p><p>Breakout force (SAE J1179): 230 kN</p>",
+    "The-JCB": "The JCB 3DX Super",
+    "gross-power": " <p>Gross Power: 100 hp</p><p>Net Power: 97.6 hp</p><p>Displacement: 268.5 cu in</p><p>Power Measured: 2200 rpm</p><p>Torque Measured: 1300 rpm</p><p>Max Speed (Forward): 40.36 km/h</p>",
+    "3DX-TLB": "3DX TLB BACKHOE HAMMER",
+    "weight-7": "<p>Weight: 7.5 t</p><p>Standard tyres: 16.9 x 28-12 PR</p><p>Bucket width: 0.79 m</p><p>Bucket capacity: 1.1 m³</p><p>Transport length: 2.35 m</p><p>Transport width: 5.9 m</p>",
+    "Terex-Wheel": "Terex Wheel Excavator TVEX 140W",
+    "weight-15": "<p>Weight: 15.7 t</p><p>Standard tyres: 10.00-20</p><p>Bucket capacity: 1 m³</p><p>Outrigger stabilisers: 2 2/4-fold</p><p>Transport length: 7.72 m</p><p>Transport width: 2.5 m</p>",
+    "Single-Drum": "Single Drum Road Roller XS263J",
+    "max-operating": "<p>Max. Operating weight: 26000 kg</p><p>Front wheel weight: 13000 kg</p><p>Rear wheel weight: 13000 kg</p><p>Line pressure: 582 N/cm</p><p>Vibration frequency: 27/32 Hz</p><p>Theoretical amplitude (high/low): 1.9/0.95 mm</p>",
+    "Joy-Global": "Joy Global Lt 270",
+    "rated-budget": "<p>Rated Bucket Capacity: 1.2 Cum</p><p>Breakout Force: Lift: 6043 Kg / Tilt: 5372 Kg</p><p>Dump Angle: 38 Deg</p><p>Tramming Capacity: 2722 Kg</p><p>Bucket Raised Height: 3266 Mm</p>",
+    "COMPACTOR-BOMAG": "COMPACTOR BOMAG BW 211 DH-5",
+    "emission-class": "<p>Emission class: Euro 5</p><p>Fuel: Diesel</p><p>Power output: 125 hp</p><p>Engine: Deutz</p><p>Number of axles: 2-axle</p><p>Tires: 23.1-26 12PR</p>",
+    "Truck-Crane": "Truck Crane KamAZ-65115",
+    "brand-kamaz": " <p>Brand: KamAZ</p><p>Loading capacity: 32 tons</p><p>Rise height: 27 meters</p><p>Chassis: KamAZ-65115 (6x4 chassis)</p><p>Emission class: Euro 4</p><p>Basic contour: 8 x 7.5 meters</p>",
+    "book": "Book"
+  },
+  "partners": {
+    "title": "PARTNERS"
+  },
+  "projects": {
+    "title": "PROJECTS",
+    "seo": {
+      "title": "Our Projects - STMG-group",
+      "description": "Explore the successful projects completed by STMG-group, showcasing our expertise and commitment to delivering high-quality mining equipment and solutions.",
+      "keywords": "STMG-group, projects, mining equipment, successful projects, expertise"
+    }
+  },
+  "contact": {
+    "title": "CONTACT",
+    "description": "Leave your contact information and we will get in touch with you",
+    "fullName_required": "Full name is required",
+    "fullName_minLength": "Full name must be at least 3 characters",
+    "fullName_maxLength": "Full name must be less than 64 characters",
+    "email_required": "Email is required",
+    "email_invalid": "Invalid email address",
+    "phone_required": "Phone is required",
+    "phone_invalid": "Phone number is not valid",
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone",
+    "leaveYourIdea": "Leave your idea",
+    "purpose": "Purpose",
+    "cancel": "Cancel",
+    "submit": "Submit"
+  },
+  "footer": {
+    "contactEmail": "info@stmg-group.com",
+    "address": "Tashkent, Mirzo Ulugbek district, st. Navnihol 3, building 7",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of service",
+    "copyright": "2024. STMG-GROUP. All rights reserved"
+  },
+  "see-more": "See more"
+}
