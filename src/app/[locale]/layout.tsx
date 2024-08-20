@@ -1,5 +1,5 @@
 import {BaseLayout} from "@/components";
-import {logoShortImg} from "@/constants";
+import {logoIconImg, logoShortImg} from "@/constants";
 import {Providers} from "@/providers";
 import {IChildren, IParams} from "@/types";
 import {NextIntlClientProvider, useMessages, useTranslations} from "next-intl";
@@ -39,6 +39,8 @@ export default function RootLayout({children, params: {locale}}: Readonly<IRootL
       <link rel="canonical" href="https://stmg-group.com"/>
       <meta name="robots" content="index, follow"/>
       <meta name="robots" content="max-image-preview:large"/>
+      <link rel="icon" type="image/svg+xml" sizes="192x192" href={logoIconImg.src}/>
+      <link rel="icon" type="image/svg+xml" sizes="32x32" href={logoIconImg.src}/>
     </head>
     <body className={saira.className}>
     <NextIntlClientProvider locale={locale} messages={messages}>
