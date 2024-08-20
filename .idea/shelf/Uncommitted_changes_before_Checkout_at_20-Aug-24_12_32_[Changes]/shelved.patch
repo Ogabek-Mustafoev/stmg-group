@@ -1,0 +1,157 @@
+Index: src/app/[locale]/layout.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import { BaseLayout } from \"@/components\";\r\nimport { logoIconImg, logoShortImg } from \"@/constants\";\r\nimport { Providers } from \"@/providers\";\r\nimport { IChildren, IParams } from \"@/types\";\r\nimport { Metadata } from \"next\";\r\nimport { NextIntlClientProvider, useMessages } from \"next-intl\";\r\nimport { Saira_Condensed } from 'next/font/google';\r\n\r\nimport '@/styles/global.scss';\r\n\r\nconst saira = Saira_Condensed({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'] });\r\n\r\nexport const metadata: Metadata = {\r\n  metadataBase: new URL('https://stmg-group.com'),\r\n  title: {\r\n    default: \"STMG-group - Leading Provider of Mining Equipment\",\r\n    template: \"%s | STMG-group\",\r\n  },\r\n  description: \"Welcome to STMG-group. We offer a comprehensive range of high-quality mining equipment tailored to meet the diverse needs of our customers. Explore our services, projects, and partnerships for superior mining solutions.\",\r\n  keywords: \"STMG-group, stmg-group, STMG-group, mining equipment, high-quality, reliable, dump trucks, drill rigs, mining solutions\",\r\n  openGraph: {\r\n    type: \"website\",\r\n    siteName: \"STMG-group\",\r\n    images: [\r\n      {\r\n        url: logoShortImg.src,\r\n        width: 1200,\r\n        height: 630,\r\n        type: 'image/png',\r\n        alt: \"STMG-group Mining Equipment\",\r\n      },\r\n    ],\r\n  },\r\n  twitter: {\r\n    card: \"summary_large_image\",\r\n    site: \"@stmg_group\",\r\n    creator: \"@stmg_group\",\r\n    images: [\r\n      {\r\n        url: logoShortImg.src,\r\n        width: 1200,\r\n        height: 630,\r\n        type: 'image/png',\r\n        alt: \"STMG-group Mining Equipment\",\r\n      },\r\n    ],\r\n  },\r\n  authors: [\r\n    { name: \"Ogabek Mustafoev\", url: \"https://mustafoev-ogabek.vercel.app/\" },\r\n    { name: \"VANGUARD-TECH-GROUP\", url: \"https://vanguar-group.com\" },\r\n  ],\r\n  icons: [\r\n    {\r\n      url: logoIconImg.src,\r\n      type: \"image/png\",\r\n      sizes: \"1200x630\",\r\n    },\r\n    {\r\n      url: logoIconImg.src,\r\n      type: \"image/png\",\r\n      sizes: \"32x32\",\r\n    },\r\n    {\r\n      url: logoIconImg.src,\r\n      type: \"image/png\",\r\n      sizes: \"16x16\",\r\n    },\r\n  ],\r\n  robots: {\r\n    index: true,\r\n    follow: true,\r\n    \"max-image-preview\": \"large\",\r\n  },\r\n};\r\n\r\ninterface IRootLayout extends IChildren {\r\n  params: IParams;\r\n}\r\n\r\nexport default function RootLayout({ children, params: { locale } }: Readonly<IRootLayout>) {\r\n  const messages = useMessages();\r\n\r\n  return (\r\n    <html lang={locale}>\r\n      <body className={saira.className}>\r\n        <NextIntlClientProvider locale={locale} messages={messages}>\r\n          <Providers locale={locale}>\r\n            <BaseLayout>{children}</BaseLayout>\r\n          </Providers>\r\n        </NextIntlClientProvider>\r\n      </body>\r\n    </html>\r\n  );\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/app/[locale]/layout.tsx b/src/app/[locale]/layout.tsx
+--- a/src/app/[locale]/layout.tsx	(revision 237d24b1a1aba08fd3f08ba50be38b1d7013f390)
++++ b/src/app/[locale]/layout.tsx	(date 1724139142417)
+@@ -1,94 +1,50 @@
+-import { BaseLayout } from "@/components";
+-import { logoIconImg, logoShortImg } from "@/constants";
+-import { Providers } from "@/providers";
+-import { IChildren, IParams } from "@/types";
+-import { Metadata } from "next";
+-import { NextIntlClientProvider, useMessages } from "next-intl";
+-import { Saira_Condensed } from 'next/font/google';
++import {BaseLayout} from "@/components";
++import {logoShortImg} from "@/constants";
++import {Providers} from "@/providers";
++import {IChildren, IParams} from "@/types";
++import {NextIntlClientProvider, useMessages, useTranslations} from "next-intl";
++import {Saira_Condensed} from 'next/font/google';
+ 
+ import '@/styles/global.scss';
+ 
+-const saira = Saira_Condensed({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'] });
++const saira = Saira_Condensed({subsets: ['latin'], weight: ['300', '400', '500', '600', '700']});
+ 
+-export const metadata: Metadata = {
+-  metadataBase: new URL('https://stmg-group.com'),
+-  title: {
+-    default: "STMG-group - Leading Provider of Mining Equipment",
+-    template: "%s | STMG-group",
+-  },
+-  description: "Welcome to STMG-group. We offer a comprehensive range of high-quality mining equipment tailored to meet the diverse needs of our customers. Explore our services, projects, and partnerships for superior mining solutions.",
+-  keywords: "STMG-group, stmg-group, STMG-group, mining equipment, high-quality, reliable, dump trucks, drill rigs, mining solutions",
+-  openGraph: {
+-    type: "website",
+-    siteName: "STMG-group",
+-    images: [
+-      {
+-        url: logoShortImg.src,
+-        width: 1200,
+-        height: 630,
+-        type: 'image/png',
+-        alt: "STMG-group Mining Equipment",
+-      },
+-    ],
+-  },
+-  twitter: {
+-    card: "summary_large_image",
+-    site: "@stmg_group",
+-    creator: "@stmg_group",
+-    images: [
+-      {
+-        url: logoShortImg.src,
+-        width: 1200,
+-        height: 630,
+-        type: 'image/png',
+-        alt: "STMG-group Mining Equipment",
+-      },
+-    ],
+-  },
+-  authors: [
+-    { name: "Ogabek Mustafoev", url: "https://mustafoev-ogabek.vercel.app/" },
+-    { name: "VANGUARD-TECH-GROUP", url: "https://vanguar-group.com" },
+-  ],
+-  icons: [
+-    {
+-      url: logoIconImg.src,
+-      type: "image/png",
+-      sizes: "1200x630",
+-    },
+-    {
+-      url: logoIconImg.src,
+-      type: "image/png",
+-      sizes: "32x32",
+-    },
+-    {
+-      url: logoIconImg.src,
+-      type: "image/png",
+-      sizes: "16x16",
+-    },
+-  ],
+-  robots: {
+-    index: true,
+-    follow: true,
+-    "max-image-preview": "large",
+-  },
+-};
+-
+ interface IRootLayout extends IChildren {
+   params: IParams;
+ }
+ 
+-export default function RootLayout({ children, params: { locale } }: Readonly<IRootLayout>) {
++export default function RootLayout({children, params: {locale}}: Readonly<IRootLayout>) {
+   const messages = useMessages();
++  const t = useTranslations();
+ 
+   return (
+     <html lang={locale}>
+-      <body className={saira.className}>
+-        <NextIntlClientProvider locale={locale} messages={messages}>
+-          <Providers locale={locale}>
+-            <BaseLayout>{children}</BaseLayout>
+-          </Providers>
+-        </NextIntlClientProvider>
+-      </body>
++    <title>{t('seo.title')}</title>
++    <meta name="description" content={t('seo.description')}/>
++    <meta name="keywords" content={t('seo.keywords')}/>
++    <meta property="og:description" content={t('seo.description')}/>
++    <meta property="og:image" content={logoShortImg.src}/>
++    <meta property="og:image:type" content='image/png'/>
++    <meta property="og:image:width" content="1200"/>
++    <meta property="og:image:height" content="630"/>
++    <meta property="og:image:alt" content="Vanguard"/>
++    <meta property="og:url" content="https://stmg-group.com"/>
++    <meta property="og:type" content="website"/>
++    <meta name="twitter:title" content={t('seo.title')}/>
++    <meta name="twitter:description" content={t('seo.description')}/>
++    <meta name="twitter:image" content={logoShortImg.src}/>
++    <meta property="twitter:image:alt" content="vanguar-group"/>
++    <meta name="twitter:card" content="summary_large_image"/>
++    <link rel="canonical" href="https://stmg-group.com"/>
++    <meta name="robots" content="index, follow"/>
++    <meta name="robots" content="max-image-preview:large"/>
++    <body className={saira.className}>
++    <NextIntlClientProvider locale={locale} messages={messages}>
++      <Providers locale={locale}>
++        <BaseLayout>{children}</BaseLayout>
++      </Providers>
++    </NextIntlClientProvider>
++    </body>
+     </html>
+   );
+ }
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1724138967721)
++++ b/.idea/vcs.xml	(date 1724138967721)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
