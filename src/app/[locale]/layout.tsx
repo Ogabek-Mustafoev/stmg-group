@@ -25,7 +25,7 @@ export default function RootLayout({children, params: {locale}}: Readonly<IRootL
       <meta name="keywords" content={t('seo.keywords')}/>
       <meta property="og:description" content={t('seo.description')}/>
       <meta property="og:image" content={logoShortImg.src}/>
-      <meta property="og:image:type" content='image/png'/>
+      <meta property="og:image:type" content='image/jpeg'/>
       <meta property="og:image:width" content="1200"/>
       <meta property="og:image:height" content="630"/>
       <meta property="og:image:alt" content="Vanguard"/>
@@ -34,7 +34,7 @@ export default function RootLayout({children, params: {locale}}: Readonly<IRootL
       <meta name="twitter:title" content={t('seo.title')}/>
       <meta name="twitter:description" content={t('seo.description')}/>
       <meta name="twitter:image" content={logoShortImg.src}/>
-      <meta property="twitter:image:alt" content="vanguar-group"/>
+      <meta property="twitter:image:alt" content="stmg-group"/>
       <meta name="twitter:card" content="summary_large_image"/>
       <link rel="canonical" href="https://stmg-group.com"/>
       <meta name="robots" content="index, follow"/>
